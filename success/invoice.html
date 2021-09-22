@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Invoice</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/adm_doc.css">
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+	<link rel="stylesheet" type="text/css" href="../title_bar/style.css">
+  <script src="../js/jquery-1.9.1.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/invoice.js"></script>
+  <script type="text/javascript" src="../title_bar/title_bar.js"></script>
+</head>
+<body>
+<!--title bar coding start-->
+	<div class="title-bar">
+		<div class="float-right title-bar-main-div">
+			<div class="title-bar-icon-1 text-center" id="minimize">
+				<i class="fa fa-window-minimize"></i>
+			</div>
+			<div class="title-bar-icon-2 text-center" id="maximize">
+				<i class="fa fa-window-maximize"></i>
+			</div>
+			<div class="title-bar-icon-3 text-center" id="close">
+				<i class="fa fa-window-close"></i>
+			</div>
+		</div>
+	</div>
+	<!--title bar coding end-->
+
+<div class="text-center my-2">
+	<button class="btn btn-primary print">Print the document</button>
+	<img src="../images/back_arrow.png" style="cursor: pointer;position: absolute;right: 100px;top: 100px;width: 100px" id="back_arrow" title="Back to previous page">
+</div>
+
+	<div class="row w-60 remove-w" style="border:2px solid black;">
+		<div class="col-12 media">
+			<div class="s-pic align-self-center col-3 p-0 pl-3">
+				<img src="../images/upload_pic.png" class="upload-school-logo">
+			</div>
+			<div class="media-content col-9 text-center border-c-left">
+				<h1 id="school-name" class="mt-4"></h1>
+				<p id="tag-line"></p>
+				<div class="border mx-auto mb-3" style="width: 50%;">
+					<span>OFFICE CELL : </span><span id="school-no"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row w-60 my-3 remove-w" style="border: 1px solid black;">
+		<table width="100%" height="70" style="border: 1px solid black;" class="text-center">
+			<tr>
+				<td style="width:25%;" class="border-c-right border-c-bottom t-b">STUDENT'S NAME</td>
+				<td style="width:34%;" class="border-c-right border-c-bottom student-name"></td>
+				<td style="width:25%;" class="border-c-right border-c-bottom t-b">INVOICE NO</td>
+				<td style="width:16%;" class="border-c-bottom invoice-no">2</td>
+			</tr>
+			<tr>
+				<td style="width:25%;" class="border-c-right border-c-bottom t-b">FATHER'S NAME</td>
+				<td style="width:34%;" class="border-c-right border-c-bottom student-father"></td>
+				<td style="width:25%;" class="border-c-right border-c-bottom t-b">DATE</td>
+				<td style="width:16%;" class="border-c-bottom invoice-date"></td>
+			</tr>
+			<tr>
+				<td class="border-c-right t-b">CLASS</td>
+				<td class="class-name"></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<table width="100%" style="border: 1px solid black;">
+			<tr class="border-c-bottom">
+				<td style="width:25%;"></td>
+				<td style="width:25%;" class="border-c-right"></td>
+				<td style="width:25%;text-align: center;" class="i-course-name border-c-right t-b py-3"></td>
+				<td style="width:25%;text-align: center;" class="i-course-fee py-3"></td>
+			</tr>
+			<tr>
+				<td style="width:25%;"></td>
+				<td style="width:25%;" class="border-c-right"></td>
+				<td style="width:25%;text-align: center;" class="t-b border-c-right">TOTAL</td>
+				<td style="width:25%;text-align: center;" class="total-fee"></td>
+			</tr>
+		</table>
+		<table width="100%" class="text-center" style="border: 1px solid black;" height="100">
+			<tr height="60">
+				<td class="border-c-right principal-signature"></td>
+				<td class="border-c-right director-signature"></td>
+			</tr>
+			<tr class="t-b" height="40">
+				<td class="border-c-right">PRINCIPAL SIGNATURE</td>
+				<td class="border-c-right">DIRECTOR SIGNATURE</td>
+			</tr>
+		</table>
+		<table width="100%" class="text-center" height="40">
+			<tr>
+				<td id="school-address" class="t-b"></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

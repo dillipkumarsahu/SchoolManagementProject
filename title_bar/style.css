@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.title-bar{
+	width: 100%;
+	height: 30px;
+	background-color: rgba(255,255,255,0.4);
+}
+
+.title-bar-main-div{
+	height: 100%;
+	width: 10%;
+}
+.title-bar-icon-1,.title-bar-icon-2,.title-bar-icon-3{
+	width: 33.3%;
+	height: 100%;
+	float: left;
+}
+.title-bar-icon-3:hover{
+	background-color: red;
+	color: white;
+}
+
+.title-bar-icon-2:hover,.title-bar-icon-1:hover{
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+}

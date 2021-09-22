@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Students page</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/adm_doc.css">
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+	<link rel="stylesheet" type="text/css" href="../title_bar/style.css">
+  <script src="../js/jquery-1.9.1.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/student.js"></script>
+  <script type="text/javascript" src="js/adm_doc.js"></script>
+   <script type="text/javascript" src="../title_bar/title_bar.js"></script>
+</head>
+<body>
+	<!--title bar coding start-->
+	<div class="title-bar">
+		<div class="float-right title-bar-main-div">
+			<div class="title-bar-icon-1 text-center" id="minimize">
+				<i class="fa fa-window-minimize"></i>
+			</div>
+			<div class="title-bar-icon-2 text-center" id="maximize">
+				<i class="fa fa-window-maximize"></i>
+			</div>
+			<div class="title-bar-icon-3 text-center" id="close">
+				<i class="fa fa-window-close"></i>
+			</div>
+		</div>
+	</div>
+	<!--title bar coding end-->
+
+	<div class="container-fluid">
+		<img src="../images/back_arrow.png" style="cursor: pointer;position: absolute;right: 100px;top: 100px;width: 100px" id="back_arrow" title="Back to previous page">
+
+		<div class="row w-60 mt-4 mb-3">
+			<div class="col-12 media border">
+				<div class="s-pic align-self-center col-3 p-0 pl-3">
+					<img src="../images/upload_pic.png" class="upload-school-logo">
+				</div>
+				<div class="media-content col-9 text-center">
+					<h1 id="school-name" class="mt-4"></h1>
+					<p id="tag-line"></p>
+					<div class="mx-auto mb-3" style="width: 80%;">
+						<span>OFFICE CELL : </span><span id="school-no"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<table class="table table-bordered student-table text-center">
+			<tr>
+				<th>PIC</th>
+				<th>STUDENT'S NAME</th>
+				<th>FATHER'S NAME</th>
+				<th>MOTHER'S NAME</th>
+				<th>DOB</th>
+				<th>DOA</th>
+				<th>MOBILE NO</th>
+				<th>ADDRESS</th>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

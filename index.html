@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="title_bar/style.css">
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="title_bar/title_bar.js"></script>
+</head>
+<body style="overflow: hidden;">
+	<!--title bar coding start-->
+	<div class="title-bar">
+		<div class="float-right title-bar-main-div">
+			<div class="title-bar-icon-1 text-center" id="minimize">
+				<i class="fa fa-window-minimize"></i>
+			</div>
+			<div class="title-bar-icon-2 text-center" id="maximize">
+				<i class="fa fa-window-maximize"></i>
+			</div>
+			<div class="title-bar-icon-3 text-center" id="close">
+				<i class="fa fa-window-close"></i>
+			</div>
+		</div>
+	</div>
+	<!--title bar coding end-->
+<div class="dark d-flex align-items-center">
+	<div class="container w-75 h-75">
+	<div class="row">
+		<div class="col-md-3 text-center">
+			<ul class="list-group">
+				<li class="list-group-item bg-warning font-weight-bold">SCHOOL MANAGEMENT 1.0</li>
+				<li class="list-group-item px-0 py-0">
+					<img src="images/founder.jpg" alt="founder" width="100%" height="400">
+				</li>
+				<li class="list-group-item bg-warning"><a href="#" class="font-weight-bold text-dark"> CONTACT</a></li>
+			</ul>
+		</div>
+		<div class="col-md-9">
+			<ul class="nav nav-tabs">
+				<li class="nav-item w-50 text-center">
+					<a href="#register" class="nav-link active" data-toggle="tab">Register</a>
+				</li>
+				<li class="nav-item w-50 text-center">
+					<a href="#login" class="nav-link" data-toggle="tab">Login</a>
+				</li>
+			</ul>
+			<div class="tab-content py-3" style="overflow-x: hidden;">
+				<div id="register" class="tab-pane active animated slideInLeft faster">
+					<form autocomplete="off" id="register-form">
+					<div class="input-group mb-2">
+						<div class="input-group-prepend">
+							<span class="input-group-text bg-warning border border-warning">Enter school name here</span>
+						</div>
+						<input required="required" type="text" name="school name" class="form-control border border-left-0" id="school-name">
+					</div>
+
+					<div class="input-group mb-2">
+						<div class="input-group-prepend">
+							<span class="input-group-text bg-warning border border-warning">Enter tag line here</span>
+						</div>
+						<input type="text" name="school tagline" class="form-control border border-left-0" id="school-tag-line">
+					</div>
+
+					<div class="input-group mb-2">
+						<div class="input-group-prepend">
+							<span class="input-group-text bg-warning border border-warning">Enter email id here</span>
+						</div>
+						<input required="required" type="email" name="email" class="form-control border border-left-0" id="school-email">
+					</div>
+
+					<div class="input-group mb-2">
+						<div class="input-group-prepend">
+							<span class="input-group-text bg-warning border border-warning">Enter password here</span>
+						</div>
+						<input required="required" type="password" name="password" class="form-control border border-left-0" placeholder="enter" id="school-password">
+						<input required="required" type="password" name="re-password" class="form-control border border-left-0" placeholder="re-enter" id="school-re-password">
+					</div>
+
+					<div class="input-group mb-2">
+						<div class="input-group-prepend">
+							<span class="input-group-text bg-warning border border-warning">Enter website name here</span>
+						</div>
+						<input type="website" name="school website" class="form-control border border-left-0" id="school-website">
+					</div>
+
+					<div class="input-group mb-2">
+						<div class="input-group-prepend">
+							<span class="input-group-text bg-warning border border-warning">Enter mobile no here</span>
+						</div>
+						<input type="number" name="school mobile" class="form-control border border-left-0" id="school-mobile">
+					</div>
+
+					<div class="input-group mb-2">
+						<div class="input-group-prepend">
+							<span class="input-group-text bg-warning border border-warning">Enter phone no here</span>
+						</div>
+						<input required="required" type="number" name="school phone" class="form-control border border-left-0" id="school-phone">
+					</div>
+
+					<div class="input-group mb-2">
+						<div class="input-group-prepend">
+							<span class="input-group-text bg-warning border border-warning">Enter address here</span>
+						</div>
+						<textarea class="form-control border border-left-0" id="school-address"></textarea>
+					</div>
+
+					<div class="alert float-left w-75 mt-1 d-none" id="message">
+						<i class="fa fa-close close" style="font-size: 20px;cursor: pointer;" data-dismiss="alert"></i>
+					</div>
+
+					<button type="submit" class="float-right btn btn-warning py-2 mt-2">Register now</button>
+					</form>
+				</div>
+				<div id="login" class="tab-pane animated slideInLeft faster">
+					<form autocomplete="off" id="login-form">
+						<div class="input-group mt-4">
+							<div class="input-group-prepend">
+								<span class="input-group-text bg-warning border border-warning">Enter email id here</span>
+							</div>
+							<input type="email" name="email" class="form-control border border-left-0" id="username">
+						</div>
+
+						<div class="input-group mt-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text bg-warning border border-warning">Enter password here</span>
+							</div>
+							<input type="password" name="password" class="form-control border border-left-0" id="login-password">
+						</div>
+						<div class="alert float-left w-75 mt-4 d-none" id="login-message">
+							<i class="fa fa-close close" style="font-size: 20px;cursor: pointer;" data-dismiss="alert"></i>
+						</div>
+						<button type="submit" class="float-right btn btn-warning py-2 mt-4">Login now</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>		
+</div>
+<!-- start model coding -->
+	<div class="modal animated slideInDown" id="confirm">
+	<div class="modal-dialog">
+		<div class="alert alert-success delete-success-notice d-none">
+			<b>Delete success ! </b>Now you can register for new school
+		</div>
+		<div class="modal-content delete-message">
+			<div class="modal-header">
+				<h4 class="modal-title">Delete notice</h4>
+			</div>
+			<div class="modal-body">
+				Do you want to delete current record ?
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-danger" id="delete-btn">Delete</button>
+				<button class="btn btn-primary" data-dismiss="modal">Cancel</button>
+			</div>
+		</div>
+	</div>
+	</div>
+<!-- end model coding -->
+</body>
+</html>

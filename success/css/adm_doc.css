@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.upload-school-logo{
+	width: 80%;
+	height: 120px;
+}
+#student-pic{
+	width: 15%;
+	height: 160px;
+	margin-left: 41%;
+	margin-right:41%;
+	margin-bottom: 20px;
+}
+.w-95{
+	width: 95%;
+	margin-left: 2.5%;
+	margin-right: : 2.5%;
+}
+.w-60{
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+.border-c{
+	border:2px solid black;
+}
+
+.border-c-top{
+	border-top: 1px solid black;
+}
+.border-c-bottom{
+	border-bottom: 1px solid black;
+}
+.border-c-left{
+	border-left: 1px solid black;
+}
+.border-c-right{
+	border-right: 1px solid black;
+}
+.t-b{
+	font-weight: bold;
+}

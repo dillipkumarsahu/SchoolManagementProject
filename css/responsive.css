@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+@media(min-width: 768px)
+{
+	.desktop-menu{
+		display: block;
+		float: right;
+	}
+	.desktop-menu li{
+		display: inline-block;
+	}
+}
+
+@media(max-width: 768px)
+{
+	.mobile-menu{
+		display: block;
+		float: right;
+	}
+	.mobile-menu li{
+		display: inline-block;
+	}
+	.about-title-des-br{
+		display: none;
+	}
+	.about-icon{
+		width: 66px;
+		height: 66px;
+		font-size: 33px;
+	}
+	.about-feature p{
+		text-align: justify;
+	}
+	.ab-img-1,.ab-img-2{
+		margin-top: 30px;
+	}
+	.ab-para-2 h4{
+		margin-top: 40px;
+		text-align: justify;
+	}
+	.ab-para-2 p{
+		text-align: justify;
+	}
+}

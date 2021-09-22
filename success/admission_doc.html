@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admission document</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/adm_doc.css">
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+	<link rel="stylesheet" type="text/css" href="../title_bar/style.css">
+  <script src="../js/jquery-1.9.1.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/adm_doc.js"></script>
+  <script type="text/javascript" src="../title_bar/title_bar.js"></script>
+</head>
+<body>
+<!--title bar coding start-->
+	<div class="title-bar">
+		<div class="float-right title-bar-main-div">
+			<div class="title-bar-icon-1 text-center" id="minimize">
+				<i class="fa fa-window-minimize"></i>
+			</div>
+			<div class="title-bar-icon-2 text-center" id="maximize">
+				<i class="fa fa-window-maximize"></i>
+			</div>
+			<div class="title-bar-icon-3 text-center" id="close">
+				<i class="fa fa-window-close"></i>
+			</div>
+		</div>
+	</div>
+	<!--title bar coding end-->
+
+<div class="text-center my-2">
+	<button class="btn btn-primary print">Print the document</button>
+	<img src="../images/back_arrow.png" style="cursor: pointer;position: absolute;right: 100px;top: 100px;width: 100px" id="back_arrow" title="Back to previous page">
+</div>
+
+	<div class="row w-60 remove-w" style="border:2px solid black;">
+		<div class="col-12 media">
+			<div class="s-pic align-self-center col-3 p-0 pl-3">
+				<img src="../images/upload_pic.png" class="upload-school-logo">
+			</div>
+			<div class="media-content col-9 text-center border-c-left">
+				<h1 id="school-name" class="mt-4"></h1>
+				<p id="tag-line"></p>
+				<div class="border mx-auto mb-3" style="width: 50%;">
+					<span>OFFICE CELL : </span><span id="school-no"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row w-60 border-c my-3 remove-w">
+		<div class="col-12">
+			<img id="student-pic" class="mt-3">
+		</div>
+		<div class="col-12">
+			<table width="100%" height="350" class="border-c text-center mb-3">
+				<tr class="border-c-bottom">
+					<td class="border-c-right t-b">CANDIDATE NAME</td>
+					<td class="border-c-right student-name"></td>
+					<td class="border-c-right t-b">DOB</td>
+					<td class="dob"></td>
+				</tr>
+				<tr class="border-c-bottom">
+					<td class="border-c-right t-b">GENDER</td>
+					<td class="border-c-right gender"></td>
+					<td class="border-c-right t-b">ADMISSION DATE</td>
+					<td class="doa"></td>
+				</tr>
+				<tr class="border-c-bottom">
+					<td class="border-c-right t-b">FATHER'S NAME</td>
+					<td class="border-c-right student-father"></td>
+					<td class="border-c-right t-b">ADMISSION IN</td>
+					<td class="admit-in"></td>
+				</tr>
+				<tr class="border-c-bottom">
+					<td class="border-c-right t-b">MOTHER'S NAME</td>
+					<td class="student-mother"></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="border-c-bottom">
+					<td class="border-c-right t-b">MOBILE NUMBER</td>
+					<td class="border-c-right mobile-1"></td>
+					<td class="mobile-2"></td>
+					<td></td>
+				</tr>
+				<tr class="border-c-bottom">
+					<td class="border-c-right t-b">ADDRESS</td>
+					<td colspan="2" class="student-address">BALASORE,BASTA</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="t-b" colspan="4" id="school-address"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
